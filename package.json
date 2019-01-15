@@ -1,0 +1,22 @@
+{
+  "name": "push_server",
+  "version": "1.0.0",
+  "description": "Web Push Server",
+  "main": "server/index.js",
+  "scripts": {
+    "start": "node server/",
+    "vapid": "node node_modules/web-push/src/cli.js generate-vapid-keys --json > server/vapid.json",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "pwa",
+    "push-server"
+  ],
+  "author": "Ivan Kalachev",
+  "license": "ISC",
+  "dependencies": {
+    "node-storage": "0.0.7",
+    "urlsafe-base64": "^1.0.0",
+    "web-push": "^3.3.3"
+  }
+}
